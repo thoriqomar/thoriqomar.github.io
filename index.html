@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Thoriq<br>Omar<br>Ibrahim<br>Syam</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Hi-School Tingz'</a> 
+  <a href="#Myself!" onclick="w3_close()" class="w3-bar-item w3-button">Myself!</a> 
+  <a href="#Contact Me!" onclick="w3_close()" class="w3-bar-item w3-button">Contact Me!</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Thoriq Omar ibrahim Syam</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="20190310_092559.png" style="width:100%" onclick="onClick(this)" alt="kalo sama mereka biasanya ke upnormal sih kalo ga ke raito, terus kerjaanya disana palingan ngelapsus :))">
+      <img src="line_573217841697771.jpg" style="width:100%" onclick="onClick(this)" alt="ini tahun ke 2 di smakbo fotonya pas lagi hut NKRI yang ke 73. mereka keluarga pertama di smakbo yang pernah saling support pas ada sistem DO">
+      <img src="1550055335475.jpg" style="width:100%" onclick="onClick(this)" alt="dibilang guru favorit juga enggak. tapi dia kakel saya di SMP loh. jadi kita se SMP gitu, tapi tetep aja pas presentasi di cancle juga">
+    </div>
+
+    <div class="w3-third">
+      <img src="IMG-20190209-WA0011.jpg" style="width:100%" onclick="onClick(this)" alt="kalo ini keluarga baru di semester 3 pas di smakbo. masuk kelas ini, dipisah sama 11.6 :(. kita di kelas ini sih capek parah jelas, untung temennya baik dan freak semua :))  ">
+      <img src="line_573241677221831.jpg" style="width:100%" onclick="onClick(this)" alt="nah ini mah pas masih blm tau apa apa di smakbo teh, fotonya pas hut NKRI yang ke 72. satu sama lain juga belum saling kenal">
+      <img src="IMG-20181113-WA0009.jpg" style="width:100%" onclick="onClick(this)" alt="Kelurga baru di tahun ke 2! yey. jadi ini foto pas pak rusman a.k.a. walikelas 11.6 Ulang tahun. tadinya mau ngesurprisein pagi tapi beliaunya lagi gaada untung ada bu dedep">
+    </div>
+    
+    <div class="w3-third">
+      <img src="line_10341112945910.jpg" style="width:100%" onclick="onClick(this)" alt="namanya Nazwa harus bgt pake 'z'. awalnya pas ngeliat jutek parah mukanya kan ya. eh taunyamah gampang mewek ">
+      <img src="IMG-20190225-WA0005.jpg" style="width:100%" onclick="onClick(this)" alt="kalo sama mereka, kita kerja bareng jadi tps. mulai dari diem dieman, pusing balik malem mulu, juknis sm ppt revisi mulu gakelar kelar, sampe dahtau dahtauan :)">
+      <img src="line_691693709764415.jpg" style="width:100%" onclick="onClick(this)" alt="masih sama keluarga tahun pertama di smakbo, pas lagi bukber kelas tapi, di kelas ini saya ngerasa mereka bener bener baik satu sama lain dan solidaritasnya kuat, kelas 10.9, walikelasnya bu Oos yang baik parah">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Myself section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="Myself!">
+    <h4><b>About Me</b></h4>
+    <img src="2018-08-18 12.06.13 1.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Thoriq Omar Ibrahim Syam</h4>
+      <p>Halo! Nama saya Thoriq Omar Ibarhim Syam namun biasa dipanggil Thoriq oleh teman teman saya. Saya lahir di Bogor, 29 November 2002. Sebelum masuk SMAKBO saya bersekolah di TK Insan Kamil, SDN Semplak 2 Bogor dan SMPN 2 Bogor. Hobi saya adalah menonton film, membaca buku, dan mendengarkan musik. Sekarang, saya tinggal bersama orangtua saya di Taman Yasmin sektor 5 Jalan Cijahe no. 12. cita cita saya setelah lulus dari SMAKBO adalah travelling ke Eropa dan kuliah di ITB.
+      </p>
+      <p>Email: thoriqsyam2911@gmail.com</p>
+      <p>Instagram/Line: thoriqsyam</p>
+      <p>WA/Line: 0815 1976 8609</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">More About Me</h4>
+      <p class="w3-wide">Introvert <div class="w3-right-align"><p>Extrovert</p></div></p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:64%">64%</div>
+      </div>
+      <p class="w3-wide">Realistik <div class="w3-right-align"><p>Visioner</p></p></div></p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:38%">38%</div>
+      </div>
+      <p class="w3-wide">Emosional <div class="w3-right-align"><p>Rasional</p></div></p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:56%">56%</div>
+      </div>
+      <h4 class="w3-padding-16"> KKPI Projects</h4>
+       <div class="w3-row">
+    <div class="w3-third">
+      <img src="thoriq omar i. s. - GIMP, Idola- 11.6.png" style="width:100%" onclick="onClick(this)" alt="Me and My Idol">
+    </div>
+   <div class="w3-third">
+      <img src="Thoriq Omar I. S.- Tugas GIF 1-11.PSG.gif" style="width:100%" onclick="onClick(this)" alt="TeFa Yoheart's">
+    </div>
+    <div class="w3-third">
+      <img src="Thoriq Omar I. S.- GIMP, Hobby- 11.6.png" style="width:100%" onclick="onClick(this)" alt="Friday Night Routine">
+    </div>
+      </div>
+  <!-- more section -->
+     <h4 class="w3-padding-16">Hobbies</h4>
+
+<div class="w3-padding-small">
+  <p> I have lot of hobbies like reading novel, listening to music, watching movie and many more. one of my hobbies is taking picture and editing it. this is some of my 'masterpiece'</p>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="1539606951328.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="20190310_105500.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="20190310_105646.png" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="1549286525081.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="1538293238675.jpg" style="width:100%">
+      <div class="w3-container"</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="1541552243682.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="Contact Me!">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Are you interseted to be my pay pal? fill the attachment below ;) !</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>impression</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+</body>
+</html>
